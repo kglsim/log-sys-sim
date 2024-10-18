@@ -1,0 +1,10 @@
+site_name: Simulation und Optimierung nachhaltiger urbaner Logistiksysteme
+site_author: Katharina Glock
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
+plugins:
+    - encryptcontent: 
+        cache_file: ''
+        global_password: 'fastiguana'
