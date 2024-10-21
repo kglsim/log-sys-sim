@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katharina Glock" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>[Protected] Grundlagen - Simulation als Werkzeug - Transformation urbaner Logistiksysteme</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "[Protected] Grundlagen - Simulation als Werkzeug";
+        var mkdocs_page_input_path = "lesson-2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Transformation urbaner Logistiksysteme
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">[Protected] Übersicht</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">[Protected] Organisatorisches</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../lesson-1/">[Protected] Grundlagen - Komponenten urbaner Logistiksyteme</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">[Protected] Grundlagen - Simulation als Werkzeug</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#was-ist-simulation">Was ist Simulation?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arten-von-simulation">Arten von Simulation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#einordnung-des-verfahrens">Einordnung des Verfahrens</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#moglichkeiten-und-grenzen-von-simulationen">Möglichkeiten und Grenzen von Simulationen</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#moglichkeiten">Möglichkeiten</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#grenzen">Grenzen</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#haufige-fehler-in-simulationsprojekten">Häufige Fehler in Simulationsprojekten</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../lesson-3/">Lektion</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../resources/">Ressourcen</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">[Protected] Impressum und Kontakt</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Transformation urbaner Logistiksysteme</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">[Protected] Grundlagen - Simulation als Werkzeug</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div id="mkdocs-encrypted-content" style="display:none">58zBy88Bpf0EXITiSQtx6w==;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</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form">
+        <h1>This content is protected with AES encryption. </h1>
+        <p>Contact your administrator for access to this page.</p>
+        <input type="password" id="mkdocs-content-password" placeholder="Password">
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "lesson-2/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["Wo+bOyfAvXXugIwWJpyvxA==;vA6Qu5XS8NRw9qTO+WwxaY+c24hEyCZT58BLDMU1/db3p6bs7PN8L/Fw5TwfkGAkPNlejCQFSgxyqyA2vpiSHgBQU4ewt7ESx/4kEoXDFABJHlds5/VX0ylcME90IIOO;anU5snm/l36M4lguj4mqKQ=="];
+var encryptcontent_obfuscate = 0;
+
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/sha256.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/hmac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/pbkdf2.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js"></script>
+<script type="text/javascript" src="../assets/javascripts/decrypt-contents.js" defer></script>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../lesson-1/" class="btn btn-neutral float-left" title="[Protected] Grundlagen - Komponenten urbaner Logistiksyteme"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lesson-3/" class="btn btn-neutral float-right" title="Lektion">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../lesson-1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lesson-3/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
